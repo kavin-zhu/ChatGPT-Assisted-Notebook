@@ -12,68 +12,87 @@ ChatGPT Generated Summary:
 Editing a Note:
 ![image](https://github.com/kavin-zhu/ChatGPT-Assisted-Notebook/assets/59909734/cf2da08d-262a-4fe8-9d0d-4fc2ef2d73bb)
 
+## Features
 
-**Features
-**
+- **Note Creation:** Create new notes with titles and content.
+- **Note Editing:** Edit existing notes.
+- **Note Deletion:** Delete unwanted notes.
+- **Note Summarization:** Generate summaries for your notes using OpenAI's GPT-3.
+- **Responsive Design:** The app is responsive and works well on various devices.
 
-Note Creation: Create new notes with titles and content.
+## Technologies Used
 
-Note Editing: Edit existing notes.
+### Frontend
 
-Note Deletion: Delete unwanted notes.
+The frontend of the application is built using React, a popular JavaScript library for building user interfaces.
 
-Note Summarization: Generate summaries for your notes using OpenAI's GPT-3.
+### Backend
 
-Responsive Design: The app is responsive and works well on various devices.
-Technologies Used
+The backend is implemented with Node.js and Express.js. It handles API requests, connects to the MongoDB database, and serves the frontend.
 
-Frontend: The frontend of the application is built using React, a popular JavaScript library for building user interfaces. 
+### Database
 
-Backend: The backend is implemented with Node.js and Express.js. It handles API requests, connects to the MongoDB database, and serves the frontend.
+MongoDB is used as the database to store notes. Mongoose, a MongoDB object modeling library, is utilized to interact with the database.
 
-Database: MongoDB is used as the database to store notes. Mongoose, a MongoDB object modeling library, is utilized to interact with the database.
+### OpenAI GPT-3
 
-OpenAI GPT-3: OpenAI's GPT-3 is employed to generate summaries of the user's notes.
+OpenAI's GPT-3 is employed to generate summaries of the user's notes.
 
-
-**Getting Started**
+## Getting Started
 
 Follow these instructions to set up and run the ChatGPT Assisted Notebook App on your local machine.
 
+### Prerequisites
 
-Prerequisites
+- Node.js and npm should be installed on your computer.
+- MongoDB should be installed and running.
 
-Node.js and npm should be installed on your computer.
+### Installation
 
-MongoDB should be installed and running.
-
-
-Installation
-
-Clone the repository to your local machine's terminal:
-
-'git clone https://github.com/your-username/ChatGPT-Assisted-Notebook.git'
-
-Navigate to the project directory:
-
-'cd ChatGPT-Assisted-Notebook'
-
-Install the dependencies:
-
-'npm install'
-
-Get an API key from OpenAI by following their instructions. Replace 'OPENAI_API_KEY' in the GenerateText.jsx file with your key.
+1. Clone the repository to your local machine's terminal:
+   ```shell
+   git clone https://github.com/your-username/ChatGPT-Assisted-Notebook.git
 
 
-Running the Application
+2. Open your terminal and navigate to the project directory:
 
-Start the MongoDB server. You can do this by running the 'mongod' command in a terminal window.
+   ```shell
+   cd ChatGPT-Assisted-Notebook
 
-run 'npm start'
+3. Install Dependencies:
 
+   ```shell
+   npm install
+   
+4. Get an OpenAI API Key:
 
-Usage
-Create notes by entering a title and content and clicking the "Add" button.
-Click the "Edit" button on a note to edit it.
-Click the "Delete" button to remove a note.
-Click the "Generate Summary" button to generate a summary of all your notes using GPT-3.
+  Obtain an API key from OpenAI by following their instructions.
+
+  Once you have the API key, open the GenerateText.jsx file in your project.
+
+  Locate the following line in the GenerateText.jsx file:
+
+  ```javascript
+  const apiKey = "OPENAI_API_KEY";
+  ```
+5. Running the Application:
+
+  Before running the application, make sure the MongoDB server is up and running. Start the MongoDB server by running:
+
+  ```shell```
+  mongod
+  
+  Start the ChatGPT Assisted Notebook App by running:
+  
+  ```shell```
+  npm start
+
+### Usage
+Once the application is running, you can use it as follows:
+  
+- **Create Notes:** Enter a title and content for your note, then click the "Add" button.
+- **Edit Notes:** Click the "Edit" button on a note to make changes.
+- **Delete Notes:** To remove a note, click the "Delete" button.
+- **Generate Summaries:** Click the "Generate Summary" button to create summaries of all your notes using GPT-3.
+   
+   
