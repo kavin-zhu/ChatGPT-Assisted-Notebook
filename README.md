@@ -1,7 +1,6 @@
 # ChatGPT-Assisted-Notebook
 MERN-fullstack web app built with React.js, MongoDB &amp; Mongoose, Node.js, Express.js. Implements OpenAI API, to utilize ChatGPT.
 
-ChatGPT Assisted Notebook App
 The ChatGPT Assisted Notebook App is a web-based application that allows users to create, manage, and summarize their notes with the assistance of OpenAI's GPT-3 language model. It provides a user-friendly interface for note-taking and can generate summaries of your notes for you.
 
 Adding a Note:
