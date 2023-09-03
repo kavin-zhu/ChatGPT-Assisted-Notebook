@@ -7,7 +7,7 @@ function GenerateText(props) {
     try {
       console.log("Generating summary...");
 
-      const apiKey = "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"; // Access the environment variable
+      const apiKey = "OPENAI_API_KEY"; // Access the environment variable
       console.log("API Key:", apiKey);
 
       if (!apiKey) {
