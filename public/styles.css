@@ -1,0 +1,256 @@
+/* Reset some default styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a common font family to the entire page */
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Apply background and padding to the body */
+body {
+  background: #f7f9fb; /* Light grey-blue background */
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Style the header with background color, margin, padding, and shadow */
+header {
+  background-color: #2c3e50; /* Dark blue header */
+  margin: auto -20px;
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style header h1 with color, font size, and font weight */
+header h1 {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+/* Create a container for the content */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 500px; /* Add space below the bottom note */
+  border-radius: 10px;
+}
+
+/* Style the notes section with flex, spacing, and alignment */
+.notes-wrapper {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-top: auto; /* Push the notes to the bottom */
+  min-height: calc(100vh - 150px); /* Set a minimum height */
+  position: relative;
+  border-radius: 10px;
+}
+
+/* Style individual notes with background, border radius, shadow, and spacing */
+.note {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Fixed padding for consistent space */
+  font-size: 1.2em; /* Common font size for both h1 and p */
+  width: calc(33.33% - 40px);
+  margin: 0 20px 80px;
+  min-height: 100px; /* Fixed minimum height for consistent size */
+  overflow: auto; /* Add scrollbar when content overflows */
+}
+
+
+/* Style the h1 element inside the note */
+.note h1 {
+  font-size: 1.5em; /* Increase the font size for the heading */
+  margin-bottom: 10px; /* Add spacing below the heading */
+  min-height: 1.5em;
+}
+
+/* Style the p element inside the note */
+.note p {
+  font-size: 1.2em; /* Increase the font size for the content */
+  margin-bottom: 20px; /* Add more spacing below the content */
+  min-height: 1.2em;
+}
+
+/* Create a container for the content and footer */
+.content-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 50px; /* Add space between the bottom note and footer */
+}
+
+/* Style the footer to stay at the bottom */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c3e50;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Set the footer height */
+}
+
+/* Style footer text with color */
+footer p {
+  color: #fff;
+}
+
+/* Style forms with width, margin, background, padding, border radius, and shadow */
+form {
+  width: 100%;
+  margin: 40px 0px 80px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Relative positioning for the create area */
+}
+
+/* Style form inputs and textareas with width, border, padding, font size, font family, background, border radius, and shadow */
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  background-color: #f5f8fa;
+  border-radius: 5px;
+  border: 1px solid #d1d8e0;
+  margin-bottom: 15px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Style the Generate Text button */
+.generate-button {
+  position: fixed; /* Set the position to fixed */
+  bottom: 95px; /* Set the distance from the bottom of the viewport */
+  right: 20px; /* Adjust the horizontal position as needed */
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Ensure it's above other content */
+}
+
+/* Styles for CreateArea buttons */
+.addButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cancelButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.addEditButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Note buttons */
+.deleteButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px; /* Reduce the padding to make the button smaller */
+  font-size: 1em; /* Reduce the font size to make the text smaller */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the "EDIT" button */
+.editButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px; /* Reduce the padding to make the button smaller */
+  font-size: 1em; /* Reduce the font size to make the text smaller */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the Generate Text button on hover */
+.generate-button:hover {
+  background-color: #2587c7;
+}
+
+/* Style the tooltip for the Generate Text button */
+.generate-button .tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  bottom: 80px; /* Show tooltip at the bottom of the button */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the tooltip on hover for the Generate Text button */
+.generate-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Styles for CreateArea buttons */
+.addButton,
+.cancelButton,
+.addEditButton,
+.deleteButton,
+.editButton {
+  margin-right: 10px; /* Add right margin for spacing between buttons */
+}
