@@ -86,11 +86,13 @@ Follow these instructions to set up and run the ChatGPT Assisted Notebook App on
 
   ```shell
   mongod
-  
+  ```
+
   Start the ChatGPT Assisted Notebook App by running:
   
   ```shell
   npm start
+   ```
 
 ### Usage
 Once the application is running, you can use it as follows:
