@@ -13,7 +13,8 @@ Editing a Note:
 ![image](https://github.com/kavin-zhu/ChatGPT-Assisted-Notebook/assets/59909734/cf2da08d-262a-4fe8-9d0d-4fc2ef2d73bb)
 
 
-Features
+**Features
+**
 
 Note Creation: Create new notes with titles and content.
 
@@ -35,7 +36,7 @@ Database: MongoDB is used as the database to store notes. Mongoose, a MongoDB ob
 OpenAI GPT-3: OpenAI's GPT-3 is employed to generate summaries of the user's notes.
 
 
-Getting Started
+**Getting Started**
 
 Follow these instructions to set up and run the ChatGPT Assisted Notebook App on your local machine.
 
