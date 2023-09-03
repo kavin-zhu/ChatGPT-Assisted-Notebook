@@ -14,12 +14,18 @@ Editing a Note:
 
 
 Features
+
 Note Creation: Create new notes with titles and content.
+
 Note Editing: Edit existing notes.
+
 Note Deletion: Delete unwanted notes.
+
 Note Summarization: Generate summaries for your notes using OpenAI's GPT-3.
+
 Responsive Design: The app is responsive and works well on various devices.
 Technologies Used
+
 Frontend: The frontend of the application is built using React, a popular JavaScript library for building user interfaces. 
 
 Backend: The backend is implemented with Node.js and Express.js. It handles API requests, connects to the MongoDB database, and serves the frontend.
@@ -28,69 +34,42 @@ Database: MongoDB is used as the database to store notes. Mongoose, a MongoDB ob
 
 OpenAI GPT-3: OpenAI's GPT-3 is employed to generate summaries of the user's notes.
 
+
 Getting Started
+
 Follow these instructions to set up and run the ChatGPT Assisted Notebook App on your local machine.
 
-Prerequisites
-Node.js and npm should be installed on your computer.
-MongoDB should be installed and running.
-Installation
-Clone the repository to your local machine:
 
-bash
-Copy code
-git clone https://github.com/your-username/ChatGPT-Assisted-Notebook.git
+Prerequisites
+
+Node.js and npm should be installed on your computer.
+
+MongoDB should be installed and running.
+
+
+Installation
+
+Clone the repository to your local machine's terminal:
+
+'git clone https://github.com/your-username/ChatGPT-Assisted-Notebook.git'
+
 Navigate to the project directory:
 
-bash
-Copy code
-cd ChatGPT-Assisted-Notebook
-Install the frontend and backend dependencies:
+'cd ChatGPT-Assisted-Notebook'
 
-bash
-Copy code
-# Install frontend dependencies
-cd client
-npm install
+Install the dependencies:
 
-# Install backend dependencies
-cd ../server
-npm install
-Configuration
-Configure the MongoDB connection by creating a .env file in the server directory with the following content:
+'npm install'
 
-env
-Copy code
-MONGODB_URI=mongodb://localhost:27017/your-database-name
-Replace your-database-name with the name of your MongoDB database.
+Get an API key from OpenAI by following their instructions. Replace 'OPENAI_API_KEY' in the GenerateText.jsx file with your key.
 
-Get an API key from OpenAI by following their instructions.
-
-Create a .env file in the server directory with the following content:
-
-env
-Copy code
-OPENAI_API_KEY=your-api-key
-Replace your-api-key with your actual OpenAI API key.
 
 Running the Application
-Start the backend server:
 
-bash
-Copy code
-cd server
-npm start
-The server will run on http://localhost:5000.
+Start the MongoDB server. You can do this by running the 'mongod' command in a terminal window.
 
-Start the frontend development server:
+run 'npm start'
 
-bash
-Copy code
-cd client
-npm start
-The frontend will be accessible at http://localhost:3000.
-
-Open your web browser and navigate to http://localhost:3000 to use the ChatGPT Assisted Notebook App.
 
 Usage
 Create notes by entering a title and content and clicking the "Add" button.
