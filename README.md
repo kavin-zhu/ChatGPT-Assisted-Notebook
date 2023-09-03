@@ -82,16 +82,16 @@ Follow these instructions to set up and run the ChatGPT Assisted Notebook App on
    ```
 5. Running the Application:
 
-  Before running the application, make sure the MongoDB server is up and running. Start the MongoDB server by running:
-
-  ```shell
-  mongod
-  ```
-
-  Start the ChatGPT Assisted Notebook App by running:
-  
-  ```shell
-  npm start
+   Before running the application, make sure the MongoDB server is up and running. Start the MongoDB server by running:
+   
+   ```shell
+   mongod
+   ```
+   
+   Start the ChatGPT Assisted Notebook App by running:
+     
+   ```shell
+   npm start
    ```
 
 ### Usage
