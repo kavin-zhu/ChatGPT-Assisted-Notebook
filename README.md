@@ -19,6 +19,7 @@ Editing a Note:
 - **Note Deletion:** Delete unwanted notes.
 - **Note Summarization:** Generate summaries for your notes using OpenAI's GPT-3.
 - **Responsive Design:** The app is responsive and works well on various devices.
+- **Database:** The notes are stored and saved on a backend database powered by MongoDB
 
 ## Technologies Used
 
