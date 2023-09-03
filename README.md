@@ -66,15 +66,15 @@ Follow these instructions to set up and run the ChatGPT Assisted Notebook App on
    
 4. Get an OpenAI API Key:
 
-  Obtain an API key from OpenAI by following their instructions.
+   Obtain an API key from OpenAI by following their instructions.
+      
+   Once you have the API key, open the GenerateText.jsx file in your project.
+   
+   Locate the following line in the GenerateText.jsx file:
 
-  Once you have the API key, open the GenerateText.jsx file in your project.
-
-  Locate the following line in the GenerateText.jsx file:
-
-  ```javascript
-  const apiKey = "OPENAI_API_KEY";
-  ```
+   ```javascript
+   const apiKey = "OPENAI_API_KEY";
+   ```
 5. Running the Application:
 
   Before running the application, make sure the MongoDB server is up and running. Start the MongoDB server by running:
