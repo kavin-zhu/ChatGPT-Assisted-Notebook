@@ -70,7 +70,7 @@ Follow these instructions to set up and run the ChatGPT Assisted Notebook App on
       
    Once you have the API key, open the GenerateText.jsx file in your project.
    
-   Locate the following line in the GenerateText.jsx file:
+   Locate the following line in the GenerateText.jsx file, and replace with your own key:
 
    ```javascript
    const apiKey = "OPENAI_API_KEY";
