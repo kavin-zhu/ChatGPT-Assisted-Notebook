@@ -58,7 +58,6 @@ Follow these instructions to set up and run the ChatGPT Assisted Notebook App on
    ```shell
    git clone https://github.com/your-username/ChatGPT-Assisted-Notebook.git
 
-
 2. Open your terminal and navigate to the project directory:
 
    ```shell
