@@ -78,8 +78,8 @@ Follow these instructions to set up and run the ChatGPT Assisted Notebook App on
    Locate the following line in the GenerateText.jsx file, and replace with your own key:
 
    ```javascript
-   const apiKey = "OPENAI_API_KEY";
-   ```
+   const apiKey = "OPENAI_API_KEY"; ```
+   
 5. Running the Application:
 
    Before running the application, make sure the MongoDB server is up and running. Start the MongoDB server by running:
